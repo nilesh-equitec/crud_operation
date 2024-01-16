@@ -1,0 +1,47 @@
+﻿@page "/addemployee"
+@using CrudOperation.Models
+@using CrudOperation.Data.Service
+@inject IEmployeeServices service
+<PageTitle>Add Employee</PageTitle>
+
+<h1>Add Emplyee</h1>
+<EditForm EditContext="editContext">
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label"> Enter the Name:</label>
+        <input type="text" @bind="employee.Name" required>
+
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label"> Enter the Email:</label>
+        <input type="text" @bind="employee.Email" required>
+
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label"> Enter the Phone:</label>
+        <input type="number" @bind="employee.Phone" required>
+
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label"> Enter the Address:</label>
+        <input type="text" @bind="employee.Address" required>
+
+    </div>
+    <div>
+        <label>Gender:</label>
+        <div>
+            <InputRadioGroup ValueExpression="@(() => employee!.Gender)" Value="employee.Gender" ValueChanged="(string value) => ChangedButtonValue(value)">
+                <label>
+                    <InputRadio Value="GenderMale" /> Male
+                </label>
+                <label>
+                    <InputRadio Value="GenderFemale" /> Female
+                </label>
+            </InputRadioGroup>
+        </div>
+    </div>
+
+    <button @onclick="AddTask">Add Employee</button>
+</EditForm>

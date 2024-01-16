@@ -1,0 +1,35 @@
+﻿@page "/update/{id:int}"
+@using CrudOperation.Models
+@using CrudOperation.Data.Service
+@inject IEmployeeServices service
+<PageTitle>update Employee</PageTitle>
+
+<h1>update Emplyee</h1>
+<div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label"> Enter the Name:</label>
+    <input type="text" @bind="employee.name" required>
+
+</div>
+
+<div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label"> Enter the Email:</label>
+    <input type="text" @bind="employee.email" required>
+
+</div>
+
+<div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label"> Enter the Phone:</label>
+    <input type="number" @bind="employee.phone" required>
+
+</div>
+
+<div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label"> Enter the Address:</label>
+    <input type="text" @bind="employee.address" required>
+
+</div>
+
+
+<button @onclick="AddTask">Add Employee</button>
+
+

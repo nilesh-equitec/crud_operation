@@ -1,0 +1,65 @@
+﻿{
+   "CodeGenerationMode": 3,
+   "ContextClassName": "EmployeeDBContext",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": "Models",
+   "PreserveCasingWithRegex": true,
+   "ProjectRootNamespace": "CrudOperation",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 2,
+   "SelectedToBeGenerated": 0,
+   "T4TemplatePath": null,
+   "Tables": [
+      {
+         "Name": "[dbo].[Emp]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[AllEmployee]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[DelectEmployee1]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[InsertEmployee]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SelectById1]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[UpdateEmployee]",
+         "ObjectType": 1
+      }
+   ],
+   "UiHint": "desktop-sq43bp0.EmployeeDB.dbo",
+   "UncountableWords": null,
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDateOnlyTimeOnly": false,
+   "UseDbContextSplitting": false,
+   "UseDecimalDataAnnotationForSprocResult": true,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": true,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoNavigations": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UseSchemaFolders": false,
+   "UseSchemaNamespaces": false,
+   "UseSpatial": false,
+   "UseT4": false
+}

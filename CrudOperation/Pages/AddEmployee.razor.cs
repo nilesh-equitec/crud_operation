@@ -6,19 +6,22 @@ namespace CrudOperation.Pages
 {
     public partial class AddEmployee
     {
-        private String gender { get; set; }
-        private bool IsFemale { get; set; }
-
+      
         public string GenderMale = "Male";
         public string GenderFemale = "Female";
+        public string skill1= "c";
+        public string skill2 = "c++";
+        public string skill3 = "java";
+        public string skill4 = "c#";
         Emp model = new ();
         EditContext? editContext;
         [Inject]
-        private NavigationManager NavigationManager { get; set; }
+        private NavigationManager? NavigationManager { get; set; }
 
-        private Emp employee=new Emp() { 
-          
-           Skill ="c"
+        private Emp employee = new()
+        {
+
+            Skill ="c"
         };
         protected override void OnInitialized()
         {
@@ -30,7 +33,7 @@ namespace CrudOperation.Pages
         {
              await service.CreateEmployee(employee);
 
-            NavigationManager.NavigateTo($"/homepage");
+            NavigationManager?.NavigateTo($"/homepage");
         }
         private void ChangedButtonValue(string selectedValue)
         {

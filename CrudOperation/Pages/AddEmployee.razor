@@ -8,26 +8,20 @@
 <EditForm EditContext="editContext">
     <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label"> Enter the Name:</label>
-        <input type="text" @bind="employee.Name" required>
+        <InputText @bind-Value="employee.Name"></InputText>
 
     </div>
-
     <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label"> Enter the Email:</label>
-        <input type="text" @bind="employee.Email" required>
-
+        <InputText @bind-Value="employee.Email"></InputText>
     </div>
-
     <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label"> Enter the Phone:</label>
-        <input type="number" @bind="employee.Phone" required>
-
+        <InputText @bind-Value="employee.Phone"></InputText>
     </div>
-
     <div class="mb-3">
         <label for="exampleInputEmail1" class="form-label"> Enter the Address:</label>
-        <input type="text" @bind="employee.Address" required>
-
+        <InputText @bind-Value="employee.Address"></InputText>
     </div>
     <div>
         <label>Gender:</label>
@@ -42,6 +36,5 @@
             </InputRadioGroup>
         </div>
     </div>
-
     <button @onclick="AddTask">Add Employee</button>
 </EditForm>

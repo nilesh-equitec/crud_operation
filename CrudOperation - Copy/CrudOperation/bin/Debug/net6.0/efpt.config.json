@@ -1,0 +1,89 @@
+﻿{
+   "CodeGenerationMode": 3,
+   "ContextClassName": "EmployeeDBContext",
+   "ContextNamespace": null,
+   "DefaultDacpacSchema": null,
+   "FilterSchemas": false,
+   "IncludeConnectionString": false,
+   "ModelNamespace": null,
+   "OutputContextPath": null,
+   "OutputPath": "Models",
+   "PreserveCasingWithRegex": true,
+   "ProjectRootNamespace": "CrudOperation",
+   "Schemas": null,
+   "SelectedHandlebarsLanguage": 2,
+   "SelectedToBeGenerated": 0,
+   "T4TemplatePath": null,
+   "Tables": [
+      {
+         "Name": "[dbo].[Employee]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[EmployeeSkills]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Skills]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[AllSkills]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[DelectEmployee1]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[GetAllEmployees]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[GetAllEmployeesWithSkills]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[InsertEmployee]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[InsertEmployeeSkills]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[InsertEmployeeWithSkills]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[InsertSkill]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[SelectById1]",
+         "ObjectType": 1
+      }
+   ],
+   "UiHint": "desktop-sq43bp0.EmployeDB.dbo",
+   "UncountableWords": null,
+   "UseBoolPropertiesWithoutDefaultSql": false,
+   "UseDatabaseNames": false,
+   "UseDateOnlyTimeOnly": false,
+   "UseDbContextSplitting": false,
+   "UseDecimalDataAnnotationForSprocResult": true,
+   "UseFluentApiOnly": true,
+   "UseHandleBars": false,
+   "UseHierarchyId": false,
+   "UseInflector": true,
+   "UseLegacyPluralizer": false,
+   "UseManyToManyEntity": false,
+   "UseNoDefaultConstructor": false,
+   "UseNoNavigations": false,
+   "UseNoObjectFilter": false,
+   "UseNodaTime": false,
+   "UseNullableReferences": false,
+   "UseSchemaFolders": false,
+   "UseSchemaNamespaces": false,
+   "UseSpatial": false,
+   "UseT4": false
+}

@@ -1,0 +1,162 @@
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\appsettings.Development.json
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\appsettings.json
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\efpt.config.json
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\CrudOperation.staticwebassets.runtime.json
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\CrudOperation.exe
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\CrudOperation.deps.json
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\CrudOperation.runtimeconfig.json
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\CrudOperation.dll
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\CrudOperation.pdb
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\Azure.Core.dll
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\Azure.Identity.dll
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\System.Drawing.Common.dll
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\System.Memory.Data.dll
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\System.Runtime.Caching.dll
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\System.Security.Permissions.dll
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\System.Windows.Extensions.dll
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\bluzor app\CrudOperation\CrudOperation\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+E:\bluzor app\CrudOperation\CrudOperation\obj\Debug\net6.0\CrudOperation.csproj.AssemblyReference.cache
+E:\bluzor app\CrudOperation\CrudOperation\obj\Debug\net6.0\CrudOperation.GeneratedMSBuildEditorConfig.editorconfig
+E:\bluzor app\CrudOperation\CrudOperation\obj\Debug\net6.0\CrudOperation.AssemblyInfoInputs.cache
+E:\bluzor app\CrudOperation\CrudOperation\obj\Debug\net6.0\CrudOperation.AssemblyInfo.cs
+E:\bluzor app\CrudOperation\CrudOperation\obj\Debug\net6.0\CrudOperation.csproj.CoreCompileInputs.cache
+E:\bluzor app\CrudOperation\CrudOperation\obj\Debug\net6.0\CrudOperation.MvcApplicationPartsAssemblyInfo.cache
+E:\bluzor app\CrudOperation\CrudOperation\obj\Debug\net6.0\CrudOperation.RazorAssemblyInfo.cache
+E:\bluzor app\CrudOperation\CrudOperation\obj\Debug\net6.0\CrudOperation.RazorAssemblyInfo.cs
+E:\bluzor app\CrudOperation\CrudOperation\obj\Debug\net6.0\staticwebassets.build.json
+E:\bluzor app\CrudOperation\CrudOperation\obj\Debug\net6.0\staticwebassets.development.json
+E:\bluzor app\CrudOperation\CrudOperation\obj\Debug\net6.0\staticwebassets\msbuild.CrudOperation.Microsoft.AspNetCore.StaticWebAssets.props
+E:\bluzor app\CrudOperation\CrudOperation\obj\Debug\net6.0\staticwebassets\msbuild.build.CrudOperation.props
+E:\bluzor app\CrudOperation\CrudOperation\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.CrudOperation.props
+E:\bluzor app\CrudOperation\CrudOperation\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.CrudOperation.props
+E:\bluzor app\CrudOperation\CrudOperation\obj\Debug\net6.0\staticwebassets.pack.json
+E:\bluzor app\CrudOperation\CrudOperation\obj\Debug\net6.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+E:\bluzor app\CrudOperation\CrudOperation\obj\Debug\net6.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+E:\bluzor app\CrudOperation\CrudOperation\obj\Debug\net6.0\scopedcss\bundle\CrudOperation.styles.css
+E:\bluzor app\CrudOperation\CrudOperation\obj\Debug\net6.0\scopedcss\projectbundle\CrudOperation.bundle.scp.css
+E:\bluzor app\CrudOperation\CrudOperation\obj\Debug\net6.0\CrudOperation.csproj.CopyComplete
+E:\bluzor app\CrudOperation\CrudOperation\obj\Debug\net6.0\CrudOperation.dll
+E:\bluzor app\CrudOperation\CrudOperation\obj\Debug\net6.0\refint\CrudOperation.dll
+E:\bluzor app\CrudOperation\CrudOperation\obj\Debug\net6.0\CrudOperation.pdb
+E:\bluzor app\CrudOperation\CrudOperation\obj\Debug\net6.0\CrudOperation.genruntimeconfig.cache
+E:\bluzor app\CrudOperation\CrudOperation\obj\Debug\net6.0\ref\CrudOperation.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\obj\Debug\net6.0\CrudOperation.csproj.AssemblyReference.cache
+E:\bluzor app\CrudOperation - Copy\CrudOperation\obj\Debug\net6.0\CrudOperation.GeneratedMSBuildEditorConfig.editorconfig
+E:\bluzor app\CrudOperation - Copy\CrudOperation\obj\Debug\net6.0\CrudOperation.AssemblyInfoInputs.cache
+E:\bluzor app\CrudOperation - Copy\CrudOperation\obj\Debug\net6.0\CrudOperation.AssemblyInfo.cs
+E:\bluzor app\CrudOperation - Copy\CrudOperation\obj\Debug\net6.0\CrudOperation.csproj.CoreCompileInputs.cache
+E:\bluzor app\CrudOperation - Copy\CrudOperation\obj\Debug\net6.0\CrudOperation.MvcApplicationPartsAssemblyInfo.cache
+E:\bluzor app\CrudOperation - Copy\CrudOperation\obj\Debug\net6.0\CrudOperation.RazorAssemblyInfo.cache
+E:\bluzor app\CrudOperation - Copy\CrudOperation\obj\Debug\net6.0\CrudOperation.RazorAssemblyInfo.cs
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\appsettings.Development.json
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\appsettings.json
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\efpt.config.json
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\CrudOperation.staticwebassets.runtime.json
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\CrudOperation.exe
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\CrudOperation.deps.json
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\CrudOperation.runtimeconfig.json
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\CrudOperation.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\CrudOperation.pdb
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\Azure.Core.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\Azure.Identity.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\Microsoft.Extensions.Caching.Abstractions.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\Microsoft.Extensions.Caching.Memory.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\Microsoft.Extensions.Configuration.Abstractions.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\Microsoft.Extensions.Logging.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\Microsoft.Extensions.Logging.Abstractions.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\Microsoft.Extensions.Options.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\Microsoft.Extensions.Primitives.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\Microsoft.Identity.Client.Extensions.Msal.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\Microsoft.SqlServer.Server.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\System.Drawing.Common.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\System.Memory.Data.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\System.Runtime.Caching.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\System.Security.Permissions.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\System.Windows.Extensions.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\bin\Debug\net6.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\obj\Debug\net6.0\staticwebassets.build.json
+E:\bluzor app\CrudOperation - Copy\CrudOperation\obj\Debug\net6.0\staticwebassets.development.json
+E:\bluzor app\CrudOperation - Copy\CrudOperation\obj\Debug\net6.0\staticwebassets\msbuild.CrudOperation.Microsoft.AspNetCore.StaticWebAssets.props
+E:\bluzor app\CrudOperation - Copy\CrudOperation\obj\Debug\net6.0\staticwebassets\msbuild.build.CrudOperation.props
+E:\bluzor app\CrudOperation - Copy\CrudOperation\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.CrudOperation.props
+E:\bluzor app\CrudOperation - Copy\CrudOperation\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.CrudOperation.props
+E:\bluzor app\CrudOperation - Copy\CrudOperation\obj\Debug\net6.0\staticwebassets.pack.json
+E:\bluzor app\CrudOperation - Copy\CrudOperation\obj\Debug\net6.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
+E:\bluzor app\CrudOperation - Copy\CrudOperation\obj\Debug\net6.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+E:\bluzor app\CrudOperation - Copy\CrudOperation\obj\Debug\net6.0\scopedcss\bundle\CrudOperation.styles.css
+E:\bluzor app\CrudOperation - Copy\CrudOperation\obj\Debug\net6.0\scopedcss\projectbundle\CrudOperation.bundle.scp.css
+E:\bluzor app\CrudOperation - Copy\CrudOperation\obj\Debug\net6.0\CrudOperation.csproj.CopyComplete
+E:\bluzor app\CrudOperation - Copy\CrudOperation\obj\Debug\net6.0\CrudOperation.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\obj\Debug\net6.0\refint\CrudOperation.dll
+E:\bluzor app\CrudOperation - Copy\CrudOperation\obj\Debug\net6.0\CrudOperation.pdb
+E:\bluzor app\CrudOperation - Copy\CrudOperation\obj\Debug\net6.0\CrudOperation.genruntimeconfig.cache
+E:\bluzor app\CrudOperation - Copy\CrudOperation\obj\Debug\net6.0\ref\CrudOperation.dll

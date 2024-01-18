@@ -1,0 +1,48 @@
+﻿@page "/addemployeedata"
+@using CrudOperation.Models
+@using CrudOperation.Data.Service
+@inject IEmployeeServices service
+<PageTitle>Add Employee</PageTitle>
+
+<h1>Add Emplyee</h1>
+<EditForm EditContext="editContext">
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label"> Enter the Name:</label>
+        <InputText @bind-Value="model.name"></InputText>
+
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label"> Enter the Email:</label>
+        <InputText @bind-Value="model.email"></InputText>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label"> Enter the Phone:</label>
+        <InputText @bind-Value="model.phone"></InputText>
+    </div>
+    <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label"> Enter the Address:</label>
+        <InputText @bind-Value="model.address"></InputText>
+    </div>
+    <div>
+        <label>Gender:</label>
+        <div>
+            <InputRadioGroup ValueExpression="@(() => model!.gender)" Value="model.gender" ValueChanged="(string value) => ChangedButtonValue(value)">
+                <label>
+                    <InputRadio Value="GenderMale" /> Male
+                </label>
+                <label>
+                    <InputRadio Value="GenderFemale" /> Female
+                </label>
+            </InputRadioGroup>
+        </div>
+    </div>
+    <div>
+        <label>Skills:</label>
+        @foreach (var skill in skills)
+        {
+            <input type="checkbox" @onclick="()=>ChangedButton(skill.id)" />
+            <label>@skill.title</label>
+        }
+    </div>
+    <button @onclick=AddTask>Add Employee</button>
+</EditForm>

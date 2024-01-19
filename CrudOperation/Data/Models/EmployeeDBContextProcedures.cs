@@ -34,7 +34,9 @@ namespace CrudOperation.Models
 
         protected void OnModelCreatingGeneratedProcedures(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<AllEmployeeResult>().HasNoKey().ToView(null);
+            modelBuilder.Entity<AllSkillsResult>().HasNoKey().ToView(null);
+            modelBuilder.Entity<GetAllEmployeesResult>().HasNoKey().ToView(null);
+            modelBuilder.Entity<GetAllEmployeesWithSkillsResult>().HasNoKey().ToView(null);
             modelBuilder.Entity<SelectById1Result>().HasNoKey().ToView(null);
         }
     }
@@ -48,7 +50,7 @@ namespace CrudOperation.Models
             _context = context;
         }
 
-        public virtual async Task<List<AllEmployeeResult>> AllEmployeeAsync(int? value, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
+        public virtual async Task<List<AllSkillsResult>> AllSkillsAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
         {
             var parameterreturnValue = new SqlParameter
             {
@@ -59,15 +61,9 @@ namespace CrudOperation.Models
 
             var sqlParameters = new []
             {
-                new SqlParameter
-                {
-                    ParameterName = "value",
-                    Value = value ?? Convert.DBNull,
-                    SqlDbType = System.Data.SqlDbType.Int,
-                },
                 parameterreturnValue,
             };
-            var _ = await _context.SqlQueryAsync<AllEmployeeResult>("EXEC @returnValue = [dbo].[AllEmployee] @value", sqlParameters, cancellationToken);
+            var _ = await _context.SqlQueryAsync<AllSkillsResult>("EXEC @returnValue = [dbo].[AllSkills]", sqlParameters, cancellationToken);
 
             returnValue?.SetValue(parameterreturnValue.Value);
 
@@ -106,7 +102,59 @@ namespace CrudOperation.Models
             return _;
         }
 
-        public virtual async Task<int> InsertEmployeeAsync(string Name, string Email, string Phone, string Gender, string Skill, string Address, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
+        public virtual async Task<List<GetAllEmployeesResult>> GetAllEmployeesAsync(int? value, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
+        {
+            var parameterreturnValue = new SqlParameter
+            {
+                ParameterName = "returnValue",
+                Direction = System.Data.ParameterDirection.Output,
+                SqlDbType = System.Data.SqlDbType.Int,
+            };
+
+            var sqlParameters = new []
+            {
+                new SqlParameter
+                {
+                    ParameterName = "value",
+                    Value = value ?? Convert.DBNull,
+                    SqlDbType = System.Data.SqlDbType.Int,
+                },
+                parameterreturnValue,
+            };
+            var _ = await _context.SqlQueryAsync<GetAllEmployeesResult>("EXEC @returnValue = [dbo].[GetAllEmployees] @value", sqlParameters, cancellationToken);
+
+            returnValue?.SetValue(parameterreturnValue.Value);
+
+            return _;
+        }
+
+        public virtual async Task<List<GetAllEmployeesWithSkillsResult>> GetAllEmployeesWithSkillsAsync(int? id, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
+        {
+            var parameterreturnValue = new SqlParameter
+            {
+                ParameterName = "returnValue",
+                Direction = System.Data.ParameterDirection.Output,
+                SqlDbType = System.Data.SqlDbType.Int,
+            };
+
+            var sqlParameters = new []
+            {
+                new SqlParameter
+                {
+                    ParameterName = "id",
+                    Value = id ?? Convert.DBNull,
+                    SqlDbType = System.Data.SqlDbType.Int,
+                },
+                parameterreturnValue,
+            };
+            var _ = await _context.SqlQueryAsync<GetAllEmployeesWithSkillsResult>("EXEC @returnValue = [dbo].[GetAllEmployeesWithSkills] @id", sqlParameters, cancellationToken);
+
+            returnValue?.SetValue(parameterreturnValue.Value);
+
+            return _;
+        }
+
+        public virtual async Task<int> InsertEmployeeAsync(string Name, string Email, string Phone, string Gender, string Address, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
         {
             var parameterreturnValue = new SqlParameter
             {
@@ -147,13 +195,6 @@ namespace CrudOperation.Models
                 },
                 new SqlParameter
                 {
-                    ParameterName = "Skill",
-                    Size = 50,
-                    Value = Skill ?? Convert.DBNull,
-                    SqlDbType = System.Data.SqlDbType.VarChar,
-                },
-                new SqlParameter
-                {
                     ParameterName = "Address",
                     Size = 100,
                     Value = Address ?? Convert.DBNull,
@@ -161,7 +202,92 @@ namespace CrudOperation.Models
                 },
                 parameterreturnValue,
             };
-            var _ = await _context.Database.ExecuteSqlRawAsync("EXEC @returnValue = [dbo].[InsertEmployee] @Name, @Email, @Phone, @Gender, @Skill, @Address", sqlParameters, cancellationToken);
+            var _ = await _context.Database.ExecuteSqlRawAsync("EXEC @returnValue = [dbo].[InsertEmployee] @Name, @Email, @Phone, @Gender, @Address", sqlParameters, cancellationToken);
+
+            returnValue?.SetValue(parameterreturnValue.Value);
+
+            return _;
+        }
+
+        public virtual async Task<int> InsertEmployeeSkillsAsync(int? employe_id, int? skill_id, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
+        {
+            var parameterreturnValue = new SqlParameter
+            {
+                ParameterName = "returnValue",
+                Direction = System.Data.ParameterDirection.Output,
+                SqlDbType = System.Data.SqlDbType.Int,
+            };
+
+            var sqlParameters = new []
+            {
+                new SqlParameter
+                {
+                    ParameterName = "employe_id",
+                    Value = employe_id ?? Convert.DBNull,
+                    SqlDbType = System.Data.SqlDbType.Int,
+                },
+                new SqlParameter
+                {
+                    ParameterName = "skill_id",
+                    Value = skill_id ?? Convert.DBNull,
+                    SqlDbType = System.Data.SqlDbType.Int,
+                },
+                parameterreturnValue,
+            };
+            var _ = await _context.Database.ExecuteSqlRawAsync("EXEC @returnValue = [dbo].[InsertEmployeeSkills] @employe_id, @skill_id", sqlParameters, cancellationToken);
+
+            returnValue?.SetValue(parameterreturnValue.Value);
+
+            return _;
+        }
+
+        public virtual async Task<int> InsertEmployeeWithSkillsAsync(int? value, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
+        {
+            var parameterreturnValue = new SqlParameter
+            {
+                ParameterName = "returnValue",
+                Direction = System.Data.ParameterDirection.Output,
+                SqlDbType = System.Data.SqlDbType.Int,
+            };
+
+            var sqlParameters = new []
+            {
+                new SqlParameter
+                {
+                    ParameterName = "value",
+                    Value = value ?? Convert.DBNull,
+                    SqlDbType = System.Data.SqlDbType.Int,
+                },
+                parameterreturnValue,
+            };
+            var _ = await _context.Database.ExecuteSqlRawAsync("EXEC @returnValue = [dbo].[InsertEmployeeWithSkills] @value", sqlParameters, cancellationToken);
+
+            returnValue?.SetValue(parameterreturnValue.Value);
+
+            return _;
+        }
+
+        public virtual async Task<int> InsertSkillAsync(string Tittle, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
+        {
+            var parameterreturnValue = new SqlParameter
+            {
+                ParameterName = "returnValue",
+                Direction = System.Data.ParameterDirection.Output,
+                SqlDbType = System.Data.SqlDbType.Int,
+            };
+
+            var sqlParameters = new []
+            {
+                new SqlParameter
+                {
+                    ParameterName = "Tittle",
+                    Size = 50,
+                    Value = Tittle ?? Convert.DBNull,
+                    SqlDbType = System.Data.SqlDbType.VarChar,
+                },
+                parameterreturnValue,
+            };
+            var _ = await _context.Database.ExecuteSqlRawAsync("EXEC @returnValue = [dbo].[InsertSkill] @Tittle", sqlParameters, cancellationToken);
 
             returnValue?.SetValue(parameterreturnValue.Value);
 
@@ -188,13 +314,13 @@ namespace CrudOperation.Models
                 parameterreturnValue,
             };
             var _ = await _context.SqlQueryAsync<SelectById1Result>("EXEC @returnValue = [dbo].[SelectById1] @value", sqlParameters, cancellationToken);
-            var user = _.SingleOrDefault();
+
             returnValue?.SetValue(parameterreturnValue.Value);
 
-            return user;
+            return _.FirstOrDefault();
         }
 
-        public virtual async Task<int> UpdateEmployeeAsync(int? Id, string Name, string Email, string Phone, string Address, string Skill, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
+        public virtual async Task<int> UpdateEmployeAsync(int? Id, string Name, string Email, string Phone, string Gender, string Address, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default)
         {
             var parameterreturnValue = new SqlParameter
             {
@@ -234,21 +360,21 @@ namespace CrudOperation.Models
                 },
                 new SqlParameter
                 {
+                    ParameterName = "Gender",
+                    Size = 20,
+                    Value = Gender ?? Convert.DBNull,
+                    SqlDbType = System.Data.SqlDbType.NVarChar,
+                },
+                new SqlParameter
+                {
                     ParameterName = "Address",
                     Size = 510,
                     Value = Address ?? Convert.DBNull,
                     SqlDbType = System.Data.SqlDbType.NVarChar,
                 },
-                new SqlParameter
-                {
-                    ParameterName = "Skill",
-                    Size = 510,
-                    Value = Skill ?? Convert.DBNull,
-                    SqlDbType = System.Data.SqlDbType.NVarChar,
-                },
                 parameterreturnValue,
             };
-            var _ = await _context.Database.ExecuteSqlRawAsync("EXEC @returnValue = [dbo].[UpdateEmployee] @Id, @Name, @Email, @Phone, @Address, @Skill", sqlParameters, cancellationToken);
+            var _ = await _context.Database.ExecuteSqlRawAsync("EXEC @returnValue = [dbo].[UpdateEmploye] @Id, @Name, @Email, @Phone, @Gender, @Address", sqlParameters, cancellationToken);
 
             returnValue?.SetValue(parameterreturnValue.Value);
 

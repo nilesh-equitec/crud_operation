@@ -16,11 +16,19 @@
    "T4TemplatePath": null,
    "Tables": [
       {
-         "Name": "[dbo].[Emp]",
+         "Name": "[dbo].[Employee]",
          "ObjectType": 0
       },
       {
-         "Name": "[dbo].[AllEmployee]",
+         "Name": "[dbo].[EmployeeSkills]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Skills]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[AllSkills]",
          "ObjectType": 1
       },
       {
@@ -28,7 +36,27 @@
          "ObjectType": 1
       },
       {
+         "Name": "[dbo].[GetAllEmployees]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[GetAllEmployeesWithSkills]",
+         "ObjectType": 1
+      },
+      {
          "Name": "[dbo].[InsertEmployee]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[InsertEmployeeSkills]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[InsertEmployeeWithSkills]",
+         "ObjectType": 1
+      },
+      {
+         "Name": "[dbo].[InsertSkill]",
          "ObjectType": 1
       },
       {
@@ -36,11 +64,11 @@
          "ObjectType": 1
       },
       {
-         "Name": "[dbo].[UpdateEmployee]",
+         "Name": "[dbo].[UpdateEmploye]",
          "ObjectType": 1
       }
    ],
-   "UiHint": "desktop-sq43bp0.EmployeeDB.dbo",
+   "UiHint": "desktop-sq43bp0.EmployeDB.dbo",
    "UncountableWords": null,
    "UseBoolPropertiesWithoutDefaultSql": false,
    "UseDatabaseNames": false,

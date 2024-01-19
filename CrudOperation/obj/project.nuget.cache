@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LJ7TsfNQR3rRho6zvOPBYnycHoP5n1PXbym/dI5qXekgfbtqzJDprf1IpGwxez56PbPtpImb5z0j279CAorgNg==",
+  "dgSpecHash": "HmeJcIApI2Z3LJa/upbuikMwz16CsOuRETBMGIL+HDuaIRgE7Dh1OzEaCLHVHXumez30M2AW4/TWHiPrI85nIQ==",
   "success": true,
-  "projectFilePath": "E:\\bluzor app\\CrudOperation\\CrudOperation\\CrudOperation.csproj",
+  "projectFilePath": "E:\\bluzor app\\CrudOperation - Copy\\CrudOperation\\CrudOperation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\owner\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\owner\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

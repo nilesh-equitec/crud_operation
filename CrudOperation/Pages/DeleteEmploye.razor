@@ -1,5 +1,5 @@
-﻿@page "/employeedata"
-<PageTitle>Employee 12323</PageTitle>
+﻿@page "/deleteEmployee"
+<PageTitle>Employee Data</PageTitle>
 @using CrudOperation.Data.Service
 @using CrudOperation.Data
 @using CrudOperation.Models
@@ -18,12 +18,13 @@ else
     <table class="table">
         <thead>
             <tr>
-                <th>Id</th>
+                <th>id</th>
                 <th>Name</th>
                 <th>Email</th>
                 <th>Adderess</th>
                 <th>Gender</th>
-                <th>Skill</th>
+                <th>skill </th>
+                <th>Delete</th>
             </tr>
         </thead>
 
@@ -36,14 +37,11 @@ else
                     <td>@emp.email</td>
                     <td>@emp.address</td>
                     <td>@emp.gender</td>
-                    <td>@Result[emp.ID]</td>
-
+                    <td>@Result[emp.ID] </td>
+                    <td><button @onclick="()=>DeleteEmployee(emp.ID)">Delete</button></td>
                 </tr>
             }
         </tbody>
 
     </table>
 }
-
-
-

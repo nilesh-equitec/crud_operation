@@ -9,75 +9,75 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CrudOperation
 build_property.RootNamespace = CrudOperation
-build_property.ProjectDir = E:\bluzor app\CrudOperation\CrudOperation\
+build_property.ProjectDir = E:\bluzor app\CrudOperation - Copy\CrudOperation\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = E:\bluzor app\CrudOperation\CrudOperation
+build_property.MSBuildProjectDirectory = E:\bluzor app\CrudOperation - Copy\CrudOperation
 build_property._RazorSourceGeneratorDebug = 
 
-[E:/bluzor app/CrudOperation/CrudOperation/App.razor]
+[E:/bluzor app/CrudOperation - Copy/CrudOperation/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/bluzor app/CrudOperation/CrudOperation/Pages/AddEmployee.razor]
+[E:/bluzor app/CrudOperation - Copy/CrudOperation/Pages/AddEmployee.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRkRW1wbG95ZWUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/bluzor app/CrudOperation/CrudOperation/Pages/Counter.razor]
+[E:/bluzor app/CrudOperation - Copy/CrudOperation/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/bluzor app/CrudOperation/CrudOperation/Pages/DeleteEmployee.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVsZXRlRW1wbG95ZWUucmF6b3I=
+[E:/bluzor app/CrudOperation - Copy/CrudOperation/Pages/DeleteEmploye.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVsZXRlRW1wbG95ZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/bluzor app/CrudOperation/CrudOperation/Pages/Employee.razor]
+[E:/bluzor app/CrudOperation - Copy/CrudOperation/Pages/Employee.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRW1wbG95ZWUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/bluzor app/CrudOperation/CrudOperation/Pages/FetchData.razor]
+[E:/bluzor app/CrudOperation - Copy/CrudOperation/Pages/FetchData.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/bluzor app/CrudOperation/CrudOperation/Pages/HomePage.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZVBhZ2UucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = 
-
-[E:/bluzor app/CrudOperation/CrudOperation/Pages/Index.razor]
+[E:/bluzor app/CrudOperation - Copy/CrudOperation/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/bluzor app/CrudOperation/CrudOperation/Pages/Update.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXBkYXRlLnJhem9y
+[E:/bluzor app/CrudOperation - Copy/CrudOperation/Pages/UpdateEmploye.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXBkYXRlRW1wbG95ZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/bluzor app/CrudOperation/CrudOperation/Shared/SurveyPrompt.razor]
+[E:/bluzor app/CrudOperation - Copy/CrudOperation/Pages/UpdateForm.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXBkYXRlRm9ybS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[E:/bluzor app/CrudOperation - Copy/CrudOperation/Shared/SurveyPrompt.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/bluzor app/CrudOperation/CrudOperation/_Imports.razor]
+[E:/bluzor app/CrudOperation - Copy/CrudOperation/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/bluzor app/CrudOperation/CrudOperation/Shared/MainLayout.razor]
+[E:/bluzor app/CrudOperation - Copy/CrudOperation/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-743ryzvfz8
 
-[E:/bluzor app/CrudOperation/CrudOperation/Shared/NavMenu.razor]
+[E:/bluzor app/CrudOperation - Copy/CrudOperation/Shared/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-piwfm7gywr
 
-[E:/bluzor app/CrudOperation/CrudOperation/Pages/Error.cshtml]
+[E:/bluzor app/CrudOperation - Copy/CrudOperation/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/bluzor app/CrudOperation/CrudOperation/Pages/_Host.cshtml]
+[E:/bluzor app/CrudOperation - Copy/CrudOperation/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[E:/bluzor app/CrudOperation/CrudOperation/Pages/_Layout.cshtml]
+[E:/bluzor app/CrudOperation - Copy/CrudOperation/Pages/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

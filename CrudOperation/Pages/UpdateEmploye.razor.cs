@@ -1,16 +1,15 @@
 ﻿using CrudOperation.Models;
 using Microsoft.AspNetCore.Components;
-using Microsoft.EntityFrameworkCore.Metadata.Internal;
 
 namespace CrudOperation.Pages
 {
-    public partial class Employee
+    public partial class UpdateEmploye
     {
         private List<GetAllEmployeesResult>? employees;
 
         private List<GetAllEmployeesWithSkillsResult>? _skills;
 
-        public Dictionary<int,string> Result = new();
+        public Dictionary<int, string> Result = new();
         [Inject]
         private NavigationManager? NavigationManager { get; set; }
         protected override async Task OnInitializedAsync()
@@ -23,19 +22,20 @@ namespace CrudOperation.Pages
                 foreach (var skill in _skills)
                 {
                     var userSkills = _skills
-                            .Where(skill => skill.EmployeeId == employee.ID)  
+                            .Where(skill => skill.EmployeeId == employee.ID)
                             .Select(skill => skill.title);
                     Result[employee.ID] = string.Join(", ", userSkills);
-                   
+
                 }
-            }     
+            }
         }
-        private async void DeleteEmployee(int id)
+        private void UpdateEmployee(int id)
         {
-            await services.DelectEmployee1(id, 0);
-            NavigationManager?.NavigateTo(NavigationManager.Uri, forceLoad: true);
+
+            NavigationManager?.NavigateTo($"update/{id}");
         }
 
 
     }
 }
+

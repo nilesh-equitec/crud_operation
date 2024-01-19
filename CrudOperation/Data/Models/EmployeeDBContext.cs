@@ -13,18 +13,20 @@ public partial class EmployeeDBContext : DbContext
     {
     }
 
-    public virtual DbSet<Emp> Emps { get; set; }
+    public virtual DbSet<Employee> Employees { get; set; }
+
+    public virtual DbSet<Skill> Skills { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.Entity<Emp>(entity =>
+        modelBuilder.Entity<Employee>(entity =>
         {
-            entity.ToTable("Emp");
+            entity.ToTable("Employee");
 
-            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Id).HasColumnName("ID");
             entity.Property(e => e.Address)
                 .IsRequired()
-                .HasMaxLength(50)
+                .HasMaxLength(100)
                 .HasColumnName("address");
             entity.Property(e => e.Email)
                 .IsRequired()
@@ -32,9 +34,10 @@ public partial class EmployeeDBContext : DbContext
                 .HasColumnName("email");
             entity.Property(e => e.Gender)
                 .IsRequired()
-                .HasMaxLength(50)
+                .HasMaxLength(20)
                 .HasColumnName("gender");
             entity.Property(e => e.Isactive)
+                .IsRequired()
                 .HasDefaultValueSql("((1))")
                 .HasColumnName("isactive");
             entity.Property(e => e.Name)
@@ -45,10 +48,32 @@ public partial class EmployeeDBContext : DbContext
                 .IsRequired()
                 .HasMaxLength(50)
                 .HasColumnName("phone");
-            entity.Property(e => e.Skill)
+
+            entity.HasMany(d => d.Skills).WithMany(p => p.Employees)
+                .UsingEntity<Dictionary<string, object>>(
+                    "EmployeeSkill",
+                    r => r.HasOne<Skill>().WithMany()
+                        .HasForeignKey("SkillId")
+                        .OnDelete(DeleteBehavior.ClientSetNull)
+                        .HasConstraintName("FK__EmployeeS__Skill__2A4B4B5E"),
+                    l => l.HasOne<Employee>().WithMany()
+                        .HasForeignKey("EmployeeId")
+                        .OnDelete(DeleteBehavior.ClientSetNull)
+                        .HasConstraintName("FK__EmployeeS__Emplo__29572725"),
+                    j =>
+                    {
+                        j.HasKey("EmployeeId", "SkillId").HasName("PK__Employee__172A460928C0FBA8");
+                        j.ToTable("EmployeeSkills");
+                    });
+        });
+
+        modelBuilder.Entity<Skill>(entity =>
+        {
+            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Title)
+                .IsRequired()
                 .HasMaxLength(50)
-                .IsUnicode(false)
-                .HasColumnName("skill");
+                .HasColumnName("title");
         });
 
         OnModelCreatingGeneratedProcedures(modelBuilder);

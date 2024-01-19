@@ -1,12 +1,4 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="">CrudOperation</a>
-        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </div>
-</div>
-
+﻿
 <div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
     <nav class="flex-column">
         <div class="nav-item px-3">
@@ -14,34 +6,75 @@
                 <span class="oi oi-home" aria-hidden="true"></span> Home
             </NavLink>
         </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="oi oi-plus" aria-hidden="true"></span> Counter
-            </NavLink>
+        @*  <div class="nav-item px-3">
+        <NavLink class="nav-link" href="counter">
+        <span class="oi oi-plus" aria-hidden="true"></span> Counter
+        </NavLink>
         </div>
         <div class="nav-item px-3">
-            <NavLink class="nav-link" href="fetchdata">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch data
-            </NavLink>
+        <NavLink class="nav-link" href="fetchdata">
+        <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch data
+        </NavLink>
         </div>
         <div class="nav-item px-3">
-            <NavLink class="nav-link" href="employeedata">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Employee Data
-            </NavLink>
+        <NavLink class="nav-link" href="employeedata">
+        <span class="oi oi-list-rich" aria-hidden="true"></span> Employee Data
+        </NavLink>
         </div>
         <div class="nav-item px-3">
-            <NavLink class="nav-link" href="addemployee">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Add Data
-            </NavLink>
+        <NavLink class="nav-link" href="addemployeedata">
+        <span class="oi oi-list-rich" aria-hidden="true"></span> Add Data
+        </NavLink>
         </div>
         <div class="nav-item px-3">
-            <NavLink class="nav-link" href="deletedata">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Delete Employee
-            </NavLink>
-        </div>
+        <NavLink class="nav-link" href="deletedata">
+        <span class="oi oi-list-rich" aria-hidden="true"></span> Delete Employee
+        </NavLink>
+        </div> *@
     </nav>
 </div>
+<style>
+    .disabledParent {
+        color: currentColor;
+        cursor: not-allowed;
+        opacity: 0.5;
+    }
 
+    .disabledChild {
+        color: currentColor;
+        cursor: not-allowed;
+        pointer-events: none;
+        opacity: 0.5;
+    }
+</style>
+<div class="sidebar_list my-scrollbar">
+    <div class="leftBox">
+        <h6 class="color_white bg_accent sidebar_dropdown has_list " @onclick="ToggleDropdown"> Employee</h6>
+        <div class="hidden_list" style="display: @listDisplay">
+            <h6 class="color_title sidebar_dropdown">
+                <NavLink  href="employeedata">
+                    <span class="oi oi-list-rich" aria-hidden="true"></span> Employee Data
+                </NavLink>
+            </h6>
+
+            <h6 class="color_title sidebar_dropdown">
+                <NavLink class="nav-link" href="addemployeedata">
+                    <span class="oi oi-list-rich" aria-hidden="true"></span> Add Data
+                </NavLink>
+            </h6>
+             <h6 class="color_title sidebar_dropdown">
+                <NavLink class="nav-link" href="deleteEmployee">
+                    <span class="oi oi-list-rich" aria-hidden="true"></span> Delete Employee
+                </NavLink>
+            </h6>
+             <h6 class="color_title sidebar_dropdown">
+                <NavLink class="nav-link" href="updateEmployee">
+                    <span class="oi oi-list-rich" aria-hidden="true"></span>Update Employee
+                </NavLink>
+            </h6>
+        </div>
+    </div>
+</div>
 @code {
     private bool collapseNavMenu = true;
 

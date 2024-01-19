@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\bluzor app\\CrudOperation\\CrudOperation\\CrudOperation.csproj": {}
+    "E:\\bluzor app\\CrudOperation - Copy\\CrudOperation\\CrudOperation.csproj": {}
   },
   "projects": {
-    "E:\\bluzor app\\CrudOperation\\CrudOperation\\CrudOperation.csproj": {
+    "E:\\bluzor app\\CrudOperation - Copy\\CrudOperation\\CrudOperation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\bluzor app\\CrudOperation\\CrudOperation\\CrudOperation.csproj",
+        "projectUniqueName": "E:\\bluzor app\\CrudOperation - Copy\\CrudOperation\\CrudOperation.csproj",
         "projectName": "CrudOperation",
-        "projectPath": "E:\\bluzor app\\CrudOperation\\CrudOperation\\CrudOperation.csproj",
+        "projectPath": "E:\\bluzor app\\CrudOperation - Copy\\CrudOperation\\CrudOperation.csproj",
         "packagesPath": "C:\\Users\\owner\\.nuget\\packages\\",
-        "outputPath": "E:\\bluzor app\\CrudOperation\\CrudOperation\\obj\\",
+        "outputPath": "E:\\bluzor app\\CrudOperation - Copy\\CrudOperation\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

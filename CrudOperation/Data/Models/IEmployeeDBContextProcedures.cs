@@ -12,10 +12,15 @@ namespace CrudOperation.Models
 {
     public partial interface IEmployeeDBContextProcedures
     {
-        Task<List<AllEmployeeResult>> AllEmployeeAsync(int? value, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
+        Task<List<AllSkillsResult>> AllSkillsAsync(OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
         Task<int> DelectEmployee1Async(int? Id, int? value1, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
-        Task<int> InsertEmployeeAsync(string Name, string Email, string Phone, string Gender, string Skill, string Address, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
+        Task<List<GetAllEmployeesResult>> GetAllEmployeesAsync(int? value, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
+        Task<List<GetAllEmployeesWithSkillsResult>> GetAllEmployeesWithSkillsAsync(int? id, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
+        Task<int> InsertEmployeeAsync(string Name, string Email, string Phone, string Gender, string Address, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
+        Task<int> InsertEmployeeSkillsAsync(int? employe_id, int? skill_id, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
+        Task<int> InsertEmployeeWithSkillsAsync(int? value, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
+        Task<int> InsertSkillAsync(string Tittle, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
         Task<SelectById1Result> SelectById1Async(int? value, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
-        Task<int> UpdateEmployeeAsync(int? Id, string Name, string Email, string Phone, string Address, string Skill, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
+        Task<int> UpdateEmployeAsync(int? Id, string Name, string Email, string Phone, string Gender, string Address, OutputParameter<int> returnValue = null, CancellationToken cancellationToken = default);
     }
 }

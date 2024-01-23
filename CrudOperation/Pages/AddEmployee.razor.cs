@@ -12,30 +12,43 @@ namespace CrudOperation.Pages
         public List<AllSkillsResult>  skills=new();
       //  public GetAllEmployeesResult employeesResult = new();
         public List<int> CheckSkill = new List<int>();
+        public bool showLoader;
         GetAllEmployeesResult model = new();
         EditContext? editContext;
         [Inject]
         private NavigationManager? NavigationManager { get; set; }
-
+        public ValidationMessageStore? validationMessageStore;
         protected override async Task OnInitializedAsync()
         {
-            editContext = new(model);
-            StateHasChanged();
-            skills = await service.GetSkill();
-        }
-        public async void SaveButton() {
-            if (model.name !=null && model.email != null && model.phone!=null && model.address!=null)
+            try
             {
-                 await service.InsertEmployee1(model);
-                var user_id = await service.GetEmployeeByNameservice(model.email, model.phone);
-                foreach (var item in CheckSkill)
-                {
-                    await service.InsertEmployeeWithSkill(user_id, item);
-                }
-                NavigationManager?.NavigateTo($"/employeedata");
+                editContext = new(model);
+                StateHasChanged();
+                skills = await service.GetSkill();
+            }catch (Exception ex) {
+                throw new Exception(ex.Message);
             }
-            else {
-             //   NavigationManager?.NavigateTo(NavigationManager.Uri, );
+        }
+        public async void OnSaveClicked() {
+            try
+            {
+                if (model.name != null && model.email != null && model.phone != null && model.address != null)
+                {
+                    await service.InsertEmployee1(model);
+                    var user_id = await service.GetEmployeeByNameservice(model.email, model.phone);
+                    foreach (var item in CheckSkill)
+                    {
+                        await service.InsertEmployeeWithSkill(user_id, item);
+                    }
+                    NavigationManager?.NavigateTo($"/employeedata");
+                }
+                else
+                {
+                    //   NavigationManager?.NavigateTo(NavigationManager.Uri, );
+                }
+            }catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
             }
         }
    
@@ -53,6 +66,19 @@ namespace CrudOperation.Pages
                CheckSkill.Add(skillName);
             }
           
+        }
+        private void OnCancelClicked()
+        {
+            try
+            {
+                showLoader = true;
+                NavigationManager?.NavigateTo("/employeedata");
+                showLoader = false;
+                StateHasChanged();
+            }
+            catch (Exception ex) {
+                throw new Exception(ex.Message);
+            }
         }
 
 

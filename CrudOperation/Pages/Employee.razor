@@ -7,7 +7,7 @@
 
 <h1>Employee Data</h1>
 
-<p>This component demonstrates fetching data from a service.</p>
+
 
 @if (employees == null)
 {
@@ -15,35 +15,42 @@
 }
 else
 {
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Adderess</th>
-                <th>Gender</th>
-                <th>Skill</th>
-            </tr>
-        </thead>
-
-        <tbody>
-            @foreach (var emp in employees)
-            {
+    <div>
+        <table class="employee_table">
+            <thead class="popup_title bg_primary">
                 <tr>
-                    <td>@emp.ID</td>
-                    <td>@emp.name</td>
-                    <td>@emp.email</td>
-                    <td>@emp.address</td>
-                    <td>@emp.gender</td>
-                    <td>@Result[emp.ID]</td>
-
+                    <th width="15%" class="color_title ">Employee ID</th>
+                    <th width="15%" class="color_title">Employee name</th>
+                    <th width="20%" class="color_title">Employee Email</th>
+                    <th width="15%" class="color_title">Employee Address</th>
+                    <th width="15%" class="color_title">Employee Gender</th>
+                    <th width="30%" class="color_title">Employee skills</th>
                 </tr>
-            }
-        </tbody>
+            </thead>
+            <tbody>
 
-    </table>
+                @foreach (var employee in employees)
+                {
+                    <tr>
+                        <td width="15%" class="color_title"><a href="javascript:void(0);">@employee.ID</a></td>
+                        <td width="15%" class="color_title"><a href="javascript:void(0);">@employee.name</a></td>
+                        <td width="20%" class="color_title"><a href="javascript:void(0);">@employee.email</a></td>
+                        <td width="15%" class="color_title"><a href="javascript:void(0);">@employee.address</a></td>
+                        <td width="15%" class="color_title"><a href="javascript:void(0);">@employee.gender</a></td>
+                        <td width="30%" class="color_title"><a href="javascript:void(0);">@Result[employee.ID] </a></td>
+                    </tr>
+                }
+
+
+            </tbody>
+        </table>
+    </div>
+
+
+
+
 }
+  
 
 
 

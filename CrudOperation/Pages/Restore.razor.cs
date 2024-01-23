@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Components;
 
 namespace CrudOperation.Pages
 {
-    public partial class UpdateEmploye
+    public partial class Restore
     {
         private List<GetAllEmployeesResult>? employees;
 
@@ -16,7 +16,7 @@ namespace CrudOperation.Pages
         {
             try
             {
-                employees = await services.GetAllEmployee(1);
+                employees = await services.GetAllEmployee(0);
                 foreach (var employee in employees)
                 {
                     _skills = await services.GetAllSkill(employee.ID);
@@ -30,18 +30,24 @@ namespace CrudOperation.Pages
 
                     }
                 }
-            }catch (Exception ex)
+            }
+            catch (Exception ex)
             {
                 throw new Exception(ex.Message);
             }
         }
-        private void UpdateEmployee(int id)
+        private async void DeleteEmployee(int id)
         {
-
-            NavigationManager?.NavigateTo($"update/{id}");
+            try
+            {
+                await services.DelectEmployee1(id, 1);
+                NavigationManager?.NavigateTo(NavigationManager.Uri, forceLoad: true);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
-
 
     }
 }
-

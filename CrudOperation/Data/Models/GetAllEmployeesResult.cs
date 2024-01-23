@@ -20,10 +20,13 @@ namespace CrudOperation.Models
         [Required(ErrorMessage = "Phone is required.")]
         [RegularExpression(@"^[0-9]{10}$", ErrorMessage = "Invalid mobile number.")]
         public string phone { get; set; }
+        [Required(ErrorMessage = "Gender is required.")]
         public string gender { get; set; }
 
         [Required(ErrorMessage = "Address is required.")]
         public string address { get; set; }
         public bool isactive { get; set; }
+
+    
     }
 }

@@ -1,15 +1,14 @@
 ﻿using CrudOperation.Models;
 using Microsoft.AspNetCore.Components.Forms;
 using Microsoft.AspNetCore.Components;
-using CrudOperation.Data.Service;
 
 namespace CrudOperation.Pages
 {
-    public partial class UpdateForm
+    public partial class ConfromDelete
     {
         [Parameter]
         public int Id { get; set; }
-        private List<GetAllEmployeesWithSkillsResult>? _selectSkills=new List<GetAllEmployeesWithSkillsResult>();
+        private List<GetAllEmployeesWithSkillsResult>? _selectSkills = new List<GetAllEmployeesWithSkillsResult>();
         private List<int>? _Skills;
         SelectById1Result employee = new SelectById1Result();
         public string GenderMale = "Male";
@@ -29,27 +28,23 @@ namespace CrudOperation.Pages
                 StateHasChanged();
                 skills = await service.GetSkill();
                 employee = await service.SelectById1Result(Id);
-                 _selectSkills = await service.GetAllSkill(Id);
+                _selectSkills = await service.GetAllSkill(Id);
                 _Skills = _selectSkills.Select(skill => skill.id).ToList();
             }
-            catch (Exception ex) {
+            catch (Exception ex)
+            {
                 throw new Exception(ex.Message);
             }
         }
-        public async void SaveButton()
+        public async void SaveButton(int id)
         {
             try
             {
-                await service.UpdateEmploye(employee);
-                await service.InsertEmployee(employee.ID);
-
-                //  var user_id = await service.GetEmployeeByNameservice(model.email, model.phone);
-                foreach (var item in CheckSkill)
-                {
-                    await service.InsertEmployeeWithSkill(employee.ID, item);
-                }
-                NavigationManager?.NavigateTo($"/updateEmployee");
-            }catch (Exception ex) {
+                await service.DelectEmployee1(id, 0);
+                NavigationManager?.NavigateTo($"/deleteEmployee");
+            }
+            catch (Exception ex)
+            {
                 throw new Exception(ex.Message);
             }
         }
@@ -70,8 +65,9 @@ namespace CrudOperation.Pages
             }
 
         }
+        private void OnCancelClicked() {
+            NavigationManager?.NavigateTo($"/deleteEmployee");
 
-
+        }
     }
 }
-

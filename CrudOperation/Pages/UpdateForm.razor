@@ -6,27 +6,94 @@
 
 <h1>Add Emplyee</h1>
 <EditForm EditContext="editContext">
-    <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label"> Enter the Name:</label>
-        <InputText @bind-Value="employee.name"></InputText>
+    @*   <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label"> Enter the Name:</label>
+    <InputText @bind-Value="employee.name"></InputText>
 
     </div>
     <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label"> Enter the Email:</label>
-        <InputText @bind-Value="employee.email"></InputText>
+    <label for="exampleInputEmail1" class="form-label"> Enter the Email:</label>
+    <InputText @bind-Value="employee.email"></InputText>
     </div>
     <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label"> Enter the Phone:</label>
-        <InputText @bind-Value="employee.phone"></InputText>
+    <label for="exampleInputEmail1" class="form-label"> Enter the Phone:</label>
+    <InputText @bind-Value="employee.phone"></InputText>
     </div>
     <div class="mb-3">
-        <label for="exampleInputEmail1" class="form-label"> Enter the Address:</label>
-        <InputText @bind-Value="employee.address"></InputText>
+    <label for="exampleInputEmail1" class="form-label"> Enter the Address:</label>
+    <InputText @bind-Value="employee.address"></InputText>
     </div>
     <div>
-        <label>Gender:</label>
-        <div>
-            <InputRadioGroup ValueExpression="@(() => employee!.gender)" Value="employee.gender" ValueChanged="(string value) => ChangedButtonValue(value)">
+    <label>Gender:</label>
+    <div>
+    <InputRadioGroup ValueExpression="@(() => employee!.gender)" Value="employee.gender" ValueChanged="(string value) => ChangedButtonValue(value)">
+    <label>
+    <InputRadio Value="GenderMale" /> Male
+    </label>
+    <label>
+    <InputRadio Value="GenderFemale" /> Female
+    </label>
+    </InputRadioGroup>
+    </div>
+    </div>
+    <div>
+    <label>Skills:</label>
+    @foreach (var skill in skills)
+    {
+    <input type="checkbox" @onclick="()=>ChangedButton(skill.id)" />
+    <label>@skill.title</label>
+    }
+    </div> *@
+    <ul class="row forumBox">
+        <li class="col-3 required">
+            <label class="inputLabel">Name</label>
+        </li>
+        <li class="col-3">
+            <div class="form_inputBox">
+                <InputText @bind-Value="employee.name" class="form-control" maxlength="20" />
+            </div>
+            <div class="erroeText">
+                <ValidationMessage For="(() => employee.name)"></ValidationMessage>
+            </div>
+        </li>
+        <li class="col-3 required">
+            <label class="inputLabel">Email</label>
+        </li>
+        <li class="col-3">
+            <div class="form_inputBox">
+                <InputText @bind-Value="employee.email" class="form-control" maxlength="20" />
+            </div>
+            <div class="erroeText">
+                <ValidationMessage For="(() => employee.email)"></ValidationMessage>
+            </div>
+        </li>
+        <li class="col-3 required">
+            <label class="inputLabel">Phone</label>
+        </li>
+        <li class="col-3">
+            <div class="form_inputBox">
+                <InputText @bind-Value="employee.phone" class="form-control" maxlength="20" />
+            </div>
+            <div class="erroeText">
+                <ValidationMessage For="(() => employee.phone)"></ValidationMessage>
+            </div>
+        </li>
+        <li class="col-3 required">
+            <label class="inputLabel">Adderess</label>
+        </li>
+        <li class="col-3">
+            <div class="form_inputBox">
+                <InputText @bind-Value="employee.address" class="form-control" maxlength="20" />
+            </div>
+            <div class="erroeText">
+                <ValidationMessage For="(() => employee.address)"></ValidationMessage>
+            </div>
+        </li>
+        <li class="col-3 required">
+            <label class="inputLabel">Gender</label>
+        </li>
+        <li class="col-3">
+            <InputRadioGroup ValueExpression="@(() =>employee!.gender)" Value="employee.gender" ValueChanged="(string value) => ChangedButtonValue(value)">
                 <label>
                     <InputRadio Value="GenderMale" /> Male
                 </label>
@@ -34,15 +101,45 @@
                     <InputRadio Value="GenderFemale" /> Female
                 </label>
             </InputRadioGroup>
-        </div>
-    </div>
-    <div>
-        <label>Skills:</label>
-        @foreach (var skill in skills)
-        {
-            <input type="checkbox" @onclick="()=>ChangedButton(skill.id)" />
+        </li>
+        <li class="col-6"></li>
+        <li class="col-3 required">
+            <label class="inputLabel">Skills</label>
+        </li>
+        <li class="col-9">
+            @*       <div class="radio_check d_flex align_center">
+
+            @foreach (var skill in skills)
+            {
+            <div class="d-flex">
+            <input type="checkbox" class=" form-check-input" @onclick="()=>ChangedButton(skill.id)" />
+
             <label>@skill.title</label>
-        }
-    </div>
-    <button @onclick=SaveButton>Add Employee</button>
+            </div>
+            }
+            </div> *@
+            <div class="form_inputBox">
+                <div class="dropdowns">
+                    <div class="radio_check d_flex align_center">
+                        @foreach (var skill in skills)
+                        {
+                            <input type="checkbox" class="form-check-input" id="@($"chk_{skill.id}")"
+                                   checked="@_Skills.Contains(skill.id)" @onclick="()=>ChangedButton(skill.id)" />
+                            <label class="form-check-label" for="@($"chk_{skill.id}")">@skill.title</label>
+                            <br />
+                        }
+                    </div>
+                </div>
+            </div>
+        </li>
+        <li class="col-12 mt_20">
+            <div class="form_btns">
+                <button type="submit" class="common_btn btnBlue" @onclick="SaveButton">Save</button>
+                @*   <button type="button" class="common_btn btnWhite" @onclick="OnCancelClicked">Cancel</button> *@
+            </div>
+        </li>
+    </ul>
+
+
+
 </EditForm>

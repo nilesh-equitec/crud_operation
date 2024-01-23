@@ -8,31 +8,43 @@ namespace CrudOperation.Pages
         private List<GetAllEmployeesResult>? employees;
 
         private List<GetAllEmployeesWithSkillsResult>? _skills;
-
+       
         public Dictionary<int, string> Result = new();
         [Inject]
         private NavigationManager? NavigationManager { get; set; }
         protected override async Task OnInitializedAsync()
         {
-            employees = await services.GetAllEmployee(1);
-            foreach (var employee in employees)
+            try
             {
-                _skills = await services.GetAllSkill(employee.ID);
-
-                foreach (var skill in _skills)
+                employees = await services.GetAllEmployee(1);
+                foreach (var employee in employees)
                 {
-                    var userSkills = _skills
-                            .Where(skill => skill.EmployeeId == employee.ID)
-                            .Select(skill => skill.title);
-                    Result[employee.ID] = string.Join(", ", userSkills);
+                    _skills = await services.GetAllSkill(employee.ID);
 
+                     
+                    foreach (var skill in _skills)
+                    {
+                        var userSkills = _skills
+                                .Where(skill => skill.EmployeeId == employee.ID)
+                                .Select(skill => skill.title);
+                        Result[employee.ID] = string.Join(", ", userSkills);
+
+                    }
                 }
+            }catch (Exception ex) {
+                throw new Exception(ex.Message);
             }
         }
         private async void DeleteEmployee(int id)
         {
-            await services.DelectEmployee1(id, 0);
-            NavigationManager?.NavigateTo(NavigationManager.Uri, forceLoad: true);
+            try
+            {
+                //await services.DelectEmployee1(id, 0);
+                NavigationManager?.NavigateTo($"/ConformDelete/{id}");
+            }catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
 
 

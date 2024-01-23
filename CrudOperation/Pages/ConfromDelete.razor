@@ -1,37 +1,32 @@
-﻿@page "/addemployeedata"
+﻿@page "/ConformDelete/{id:int}"
 @using CrudOperation.Models
 @using CrudOperation.Data.Service
 @inject IEmployeeServices service
+<PageTitle>Update Employee</PageTitle>
 
-<PageTitle>Add Employee</PageTitle>
-
-<h1>Add Emplyee</h1>
+<h1>Delete Emplyee</h1>
 <EditForm EditContext="editContext">
-    <DataAnnotationsValidator />
-    @* <div class="mb-3">
+    @*   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label"> Enter the Name:</label>
-    <InputText @bind-Value="model.name"></InputText>
-    <ValidationMessage For="@(() => model.name)" />
+    <InputText @bind-Value="employee.name"></InputText>
+
     </div>
     <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label"> Enter the Email:</label>
-    <InputText @bind-Value="model.email"></InputText>
-    <ValidationMessage For="@(() => model.email)" />
+    <InputText @bind-Value="employee.email"></InputText>
     </div>
     <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label"> Enter the Phone:</label>
-    <InputText @bind-Value="model.phone"></InputText>
-    <ValidationMessage For="@(() => model.phone)" />
+    <InputText @bind-Value="employee.phone"></InputText>
     </div>
     <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label"> Enter the Address:</label>
-    <InputText @bind-Value="model.address"></InputText>
-    <ValidationMessage For="@(() => model.address)" />
+    <InputText @bind-Value="employee.address"></InputText>
     </div>
     <div>
     <label>Gender:</label>
     <div>
-    <InputRadioGroup ValueExpression="@(() => model!.gender)" Value="model.gender" ValueChanged="(string value) => ChangedButtonValue(value)">
+    <InputRadioGroup ValueExpression="@(() => employee!.gender)" Value="employee.gender" ValueChanged="(string value) => ChangedButtonValue(value)">
     <label>
     <InputRadio Value="GenderMale" /> Male
     </label>
@@ -48,18 +43,17 @@
     <input type="checkbox" @onclick="()=>ChangedButton(skill.id)" />
     <label>@skill.title</label>
     }
-    </div>
-    *@
+    </div> *@
     <ul class="row forumBox">
-        <li class="col-3 ">
+        <li class="col-3 required">
             <label class="inputLabel">Name</label>
         </li>
         <li class="col-3">
             <div class="form_inputBox">
-                <InputText @bind-Value="model.name" class="form-control" maxlength="20" />
+                <InputText @bind-Value="employee.name" class="form-control" maxlength="20" />
             </div>
             <div class="erroeText">
-                <ValidationMessage For="(() => model.name)"></ValidationMessage>
+                <ValidationMessage For="(() => employee.name)"></ValidationMessage>
             </div>
         </li>
         <li class="col-3 required">
@@ -67,10 +61,10 @@
         </li>
         <li class="col-3">
             <div class="form_inputBox">
-                <InputText @bind-Value="model.email" class="form-control" maxlength="20" />
+                <InputText @bind-Value="employee.email" class="form-control" maxlength="20" />
             </div>
             <div class="erroeText">
-                <ValidationMessage For="(() => model.email)"></ValidationMessage>
+                <ValidationMessage For="(() => employee.email)"></ValidationMessage>
             </div>
         </li>
         <li class="col-3 required">
@@ -78,28 +72,28 @@
         </li>
         <li class="col-3">
             <div class="form_inputBox">
-                <InputText @bind-Value="model.phone" class="form-control" maxlength="20" />
+                <InputText @bind-Value="employee.phone" class="form-control" maxlength="20" />
             </div>
             <div class="erroeText">
-                <ValidationMessage For="(() => model.phone)"></ValidationMessage>
+                <ValidationMessage For="(() => employee.phone)"></ValidationMessage>
             </div>
         </li>
-        <li class="col-3 ">
+        <li class="col-3 required">
             <label class="inputLabel">Adderess</label>
         </li>
         <li class="col-3">
             <div class="form_inputBox">
-                <InputText @bind-Value="model.address" class="form-control" maxlength="20" />
+                <InputText @bind-Value="employee.address" class="form-control" maxlength="20" />
             </div>
-            <div class="erroeText ">
-                <ValidationMessage For="(() => model.address)"></ValidationMessage>
+            <div class="erroeText">
+                <ValidationMessage For="(() => employee.address)"></ValidationMessage>
             </div>
         </li>
         <li class="col-3 required">
             <label class="inputLabel">Gender</label>
         </li>
         <li class="col-3">
-            <InputRadioGroup ValueExpression="@(() => model!.gender)" Value="model.gender" ValueChanged="(string value) => ChangedButtonValue(value)">
+            <InputRadioGroup ValueExpression="@(() =>employee!.gender)" Value="employee.gender" ValueChanged="(string value) => ChangedButtonValue(value)">
                 <label>
                     <InputRadio Value="GenderMale" /> Male
                 </label>
@@ -107,12 +101,9 @@
                     <InputRadio Value="GenderFemale" /> Female
                 </label>
             </InputRadioGroup>
-            <div class="erroeText">
-                <ValidationMessage For="(() => model.gender)"></ValidationMessage>
-            </div>
         </li>
         <li class="col-6"></li>
-        <li class="col-3">
+        <li class="col-3 required">
             <label class="inputLabel">Skills</label>
         </li>
         <li class="col-9">
@@ -127,31 +118,28 @@
             </div>
             }
             </div> *@
-
-            <div class="d-flex">
-
-                @foreach (var skill in skills)
-                {
-
-
+            <div class="form_inputBox">
+                <div class="dropdowns">
                     <div class="radio_check d_flex align_center">
-
-                        <input type="checkbox" class="form-check-input" @onclick="()=>ChangedButton(skill.id)" />
-
-                        <label>@skill.title</label>
+                        @foreach (var skill in skills)
+                        {
+                            <input type="checkbox" class="form-check-input" id="@($"chk_{skill.id}")"
+                                   checked="@_Skills.Contains(skill.id)" @onclick="()=>ChangedButton(skill.id)" disabled />
+                            <label class="form-check-label" for="@($"chk_{skill.id}")">@skill.title</label>
+                            <br />
+                        }
                     </div>
-                }
-
+                </div>
             </div>
-
         </li>
         <li class="col-12 mt_20">
             <div class="form_btns">
-                <button type="submit" class="common_btn btnBlue" @onclick="OnSaveClicked">Save</button>
+                <button type="submit" class="common_btn btnBlue" @onclick="()=>SaveButton(employee.ID)">Delete</button>
                 <button type="button" class="common_btn btnWhite" @onclick="OnCancelClicked">Cancel</button>
             </div>
         </li>
     </ul>
+
 
 
 </EditForm>
